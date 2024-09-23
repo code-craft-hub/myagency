@@ -14,7 +14,7 @@ const ButtonComponent = ({
 }) => {
   return (
     <div>
-      <Button className="rounded-full " variant={fill}>
+      <Button className="rounded-full w-full " variant={fill}>
         {text}
         {icon && <FaArrowRightLong className="ml-4" />}
       </Button>

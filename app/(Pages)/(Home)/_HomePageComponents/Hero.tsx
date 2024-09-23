@@ -5,7 +5,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="section">
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-16">
         <div className="md:w-1/2 flex flex-col gap-4">
           <div className="rounded-full p-2 gap-2 items-center justify-center flex bg-bgBackground dark:text-black max-w-56">
             <div>
@@ -24,11 +24,11 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex sm:flex-row flex-col gap-4">
             <ButtonComponent text="Get Started" icon={true} />
             <ButtonComponent text="View Services" fill="outline" />
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 items-center max-sm:justify-center">
             <div className="">
               <Image
                 src="/stack.avif"
@@ -47,7 +47,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 realtive">
+        <div className="md:w-1/2 realtive flex items-center justify-center">
           <div className="">
             <Image
               src="/pointingImage.avif"
