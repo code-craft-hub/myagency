@@ -9,7 +9,7 @@ import Vision from "./_HomePageComponents/Vision";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <Services />
       <Passion />
@@ -18,6 +18,6 @@ export default function Home() {
       <Testimonials />
       <Blog />
       <CallToAction />
-    </main>
+    </>
   );
 }

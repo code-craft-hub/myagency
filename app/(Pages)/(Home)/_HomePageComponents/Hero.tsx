@@ -1,4 +1,4 @@
-import ButtonComponent from "@/components/Button";
+import ButtonComponent from "@/components/ButtonComponent";
 import Image from "next/image";
 import React from "react";
 
@@ -57,17 +57,12 @@ const Hero = () => {
             />
           </div>
           <div className="absolute hidden lg:block lg:top-96 ">
-            <Image
-              src="/revenue.avif"
-              height={200}
-              width={200}
-              alt="man"
-            />
+            <Image src="/revenue.avif" height={200} width={200} alt="man" />
           </div>
         </div>
       </div>
     </section>
   );
-}; 
+};
 
 export default Hero;

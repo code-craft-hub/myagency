@@ -1,4 +1,4 @@
-import ButtonComponent from "@/components/Button";
+import ButtonComponent from "@/components/ButtonComponent";
 import Image from "next/image";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
@@ -24,8 +24,12 @@ const CaseStudy = () => {
           <div className="flex-1 md:w-1/2 flex items-center justify-center border-[1px] rounded-2xl overflow-hidden w-full">
             <div className="">
               <div className="w-full relative h-72">
-              <Image src="/luxemart.avif" fill={true} style={{ objectFit: 'cover' }} alt="man" />
-
+                <Image
+                  src="/luxemart.avif"
+                  fill={true}
+                  style={{ objectFit: "cover" }}
+                  alt="man"
+                />
               </div>
 
               <div className="flex flex-col sm:flex-row p-4 sm:p-8 gap-4">

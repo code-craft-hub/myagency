@@ -1,7 +1,6 @@
 "use client";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Button } from "./ui/button";
-import { VariantProps } from "class-variance-authority";
 
 const ButtonComponent = ({
   text,

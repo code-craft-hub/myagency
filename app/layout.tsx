@@ -40,10 +40,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main>
+          <>
             {children}
             <Footer />
-          </main>
+          </>
         </ThemeProvider>
         <Toaster richColors />
       </body>
