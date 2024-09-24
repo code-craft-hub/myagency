@@ -15,7 +15,7 @@ const Services = () => {
         </div>
         <div className="space-y-2 mt-4 sm:mt-8">
           <h1 className="text-center font-bold text-2xl sm:text-4xl">
-            Our Expertise, Your Success.{" "}
+            What We Do
           </h1>
           <p className="text-center">
             We offer a range of cutting-edge services designed to amplify your

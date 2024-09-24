@@ -59,6 +59,8 @@ const config = {
         grayColor: "222628",
         bgBackground: "#f6f8fa",
         lightGreen: "#14B8A6",
+        pale: "#E8F8F6",
+        teal: "#013941",
       },
       // borderRadius: {
       //   lg: "var(--radius)",

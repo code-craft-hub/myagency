@@ -1,50 +1,85 @@
-import { InfiniteMovingCards } from '@/components/ui/infinite-moving-cards';
-import React from 'react'
+"use client";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { FaStar } from "react-icons/fa6";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import React from "react";
+import Image from "next/image";
 
 const Testimonials = () => {
-  const testimonials = [
-    {
-      quote:
-        "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-      name: "Charles Dickens",
-      title: "A Tale of Two Cities",
-    },
-    {
-      quote:
-        "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-      name: "William Shakespeare",
-      title: "Hamlet",
-    },
-    {
-      quote: "All that we see or seem is but a dream within a dream.",
-      name: "Edgar Allan Poe",
-      title: "A Dream Within a Dream",
-    },
-    {
-      quote:
-        "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-      name: "Jane Austen",
-      title: "Pride and Prejudice",
-    },
-    {
-      quote:
-        "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-      name: "Herman Melville",
-      title: "Moby-Dick",
-    },
-  ];
   return (
-    <section className='section'>
-       {/* <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"> */}
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    {/* </div> */}
-      
-    </section>
-  )
-}
+    <section className="section ">
+      <div className=" w-full">
+        <Swiper
+          modules={[Pagination,  Autoplay]}
+          spaceBetween={50}
+          slidesPerView={3}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 8,
+            },
 
-export default Testimonials
+            668: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1300: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+          }}
+          className="!p-16"
+        >
+          {[1, 2, 3, 4, 5].map((_, i) => (
+            <SwiperSlide key={i} className="bg-zinc-900 rounded-xl">
+              <div className="rounded-xl p-4 sm:p-8">
+                <div className="flex my-4">
+                  {[1, 2, 3, 4, 5].map((_, i) => (
+                    <div key={i}>
+                      <FaStar className="text-yellow-500" />
+                    </div>
+                  ))}
+                </div>
+                <p className="">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
+                  error? Aspernatur, quisquam consequatur sint id consectetur
+                  doloremque repellat cupiditate.
+                </p>
+                <div className="flex gap-4 mt-4">
+                  <div className="rounded-full overflow-hidden">
+                    <Image
+                      src="/Anastasya.webp"
+                      alt="reviewer"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h1 className="font-semibold">Jonas Khanwald</h1>
+                    <p className="">Co-Founder, Vercel</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;

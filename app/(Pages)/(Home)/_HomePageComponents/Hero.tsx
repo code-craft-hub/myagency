@@ -26,7 +26,7 @@ const Hero = () => {
 
           <div className="flex sm:flex-row flex-col gap-4">
             <ButtonComponent text="Get Started" icon={true} />
-            <ButtonComponent text="View Services" fill="outline" />
+            <ButtonComponent text="Book a call" fill="outline" call={true} />
           </div>
           <div className="flex flex-col sm:flex-row gap-4 items-center max-sm:justify-center">
             <div className="">
