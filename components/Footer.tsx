@@ -1,9 +1,13 @@
 import React from "react";
 import ButtonComponent from "./ButtonComponent";
+// import { ThemeChanger } from "./ThemeChanger";
 
 const Footer = () => {
   return (
-    <section className="section">
+    <section className="section border-2 rounded-2xl">
+      {/* <div className="">
+        <ThemeChanger />
+      </div> */}
       <div className="w-full flex flex-col justify-center items-center">
         <h1 className="font-bold text-4xl text-center ">
           Ready to take your business to the next level?

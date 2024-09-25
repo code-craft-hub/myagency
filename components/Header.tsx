@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { ThemeChanger } from "./ThemeChanger";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -54,11 +55,15 @@ const Header = () => {
         )}
       >
         <div className="section  flex-1 justify-between py-2 items-center px-4">
-          <div className="">Logo</div>
+          <Link href={"/"} className="">
+            <Image src="/logo.svg" alt="reviewer" width={30} height={30} />
+          </Link>
           <div className="flex gap-4">
             <div className="flex gap-4 items-center">
-              <Link href={"/contact"}>Contact</Link>
+              <Link href={"/"}>Home</Link>
+              <Link href={"/work"}>Portfolio</Link>
               <Link href={"/service"}>Services</Link>
+              <Link href={"/contact"}>Contact</Link>
             </div>
             <div className="">
               <ThemeChanger />
