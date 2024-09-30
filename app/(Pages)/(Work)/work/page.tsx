@@ -1,7 +1,9 @@
 import ButtonComponent from "@/components/ButtonComponent";
-import { serviceItems, worksData } from "@/constants";
+import { worksData } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const page = () => {
   return (
@@ -23,7 +25,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8 mt-8">
           {worksData?.map(({ title, des, subtitle, img }, idx) => (
             <div
               key={idx}
@@ -40,9 +42,16 @@ const page = () => {
                 </div>
               </div>
               <div className="space-y-4">
-                <p className="">{title}</p>
+                <p className="font-bold text-2xl">{title}</p>
                 <h1 className="">{subtitle}</h1>
                 <p className="">{des}</p>
+                <Link
+                  href={`/work/${idx}`}
+                  className="text-green-500 flex items-center "
+                >
+                  <span className="">Learn More</span>
+                  <FaArrowRightLong className="ml-4" />
+                </Link>
               </div>
             </div>
           ))}

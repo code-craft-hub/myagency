@@ -4,16 +4,15 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingLogos = ({
+export const InfiniteMovingLogosIntegration = ({
   items,
-  direction = "left",
+  direction = "right",
   speed = "fast",
   pauseOnHover = true,
   className,
 }: {
   items: {
     img: string;
-    name: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -87,7 +86,10 @@ export const InfiniteMovingLogos = ({
         )}
       >
         {items.map(({ img }, idx) => (
-          <div key={idx} className="items-center justify-center flex gap-2 bg-slate-100 p-4 rounded-xl">
+          <div
+            key={idx}
+            className="items-center justify-center flex gap-2 bg-slate-100 p-4 rounded-xl"
+          >
             <Image src={img} alt="logos" width={200} height={200} />
           </div>
         ))}
@@ -95,4 +97,3 @@ export const InfiniteMovingLogos = ({
     </div>
   );
 };
-

@@ -55,13 +55,15 @@ const Header = () => {
         )}
       >
         <div className="section  flex-1 justify-between py-2 items-center px-4">
-          <Link href={"/"} className="">
+          <Link href={"/"} className="flex items-center justify-center">
             <Image src="/logo.svg" alt="reviewer" width={30} height={30} />
+            <h1 className="font-bold ml-1">CodeCraftHub</h1>
           </Link>
           <div className="flex gap-4">
             <div className="flex gap-4 items-center">
               <Link href={"/"}>Home</Link>
               <Link href={"/work"}>Portfolio</Link>
+              <Link href={"/blog"}>Blog</Link>
               <Link href={"/service"}>Services</Link>
               <Link href={"/contact"}>Contact</Link>
             </div>
