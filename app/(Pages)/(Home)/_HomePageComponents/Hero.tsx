@@ -50,14 +50,11 @@ const Hero = () => {
         <div className="md:w-1/2 realtive flex items-center justify-center">
           <div className="">
             <Image
-              src="/pointingImage.avif"
-              height={350}
-              width={350}
+              src="/hero.png"
+              height={600}
+              width={600}
               alt="man"
             />
-          </div>
-          <div className="absolute hidden lg:block lg:top-96 ">
-            <Image src="/revenue.avif" height={200} width={200} alt="man" />
           </div>
         </div>
       </div>

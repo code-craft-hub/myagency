@@ -74,29 +74,29 @@ export const contactInfo = [
 ];
 export const worksData = [
   {
-    id:1,
-    img: "/1EmailMarketing.webp",
+    id: 1,
+    img: "/cverai.png",
     title: "Marketing",
     subtitle: "Zenith Health Social Media & Content Marketing Strategy",
     des: "Increase sales and establish Zenith Health Supplements as a wellness leader with PPC and content marketing.",
   },
   {
-    id:2,
-    img: "/1marketing.webp",
+    id: 2,
+    img: "/officenannyinc.png",
     title: "Email Marketing",
     subtitle: "Urban Threads Email Marketing and Customer Loyalty Program",
     des: "Boost customer retention and repeat purchases with targeted email marketing and a loyalty program.",
   },
   {
-    id:3,
-    img: "/MarketingCampaign.webp",
+    id: 3,
+    img: "/radiganremodelinganddesign.png",
     title: "Marketing Campaign",
     subtitle: "Gourmet Grocer Social Media Marketing Campaign",
     des: "Boost brand awareness and foot traffic to Gourmet Grocer with social media and influencer marketing.",
   },
   {
-    id:4,
-    img: "/seooptimization.webp",
+    id: 4,
+    img: "/Kreasion.png",
     title: "SEO Optimization",
     subtitle: "EcoSolutions Corp Website Redesign and SEO Optimization",
     des: "Redesign EcoSolutions Corp's website to improve search visibility, boost organic traffic, and generate more leads.",
@@ -181,6 +181,10 @@ export const ClientsLogos = [
     name: "vercel",
   },
   {
+    img: "/CVER Logo.png",
+    name: "cverai",
+  },
+  {
     img: "/Kreasion.png",
     name: "supabase",
   },
@@ -261,5 +265,71 @@ export const BlogInfo = [
     title: "Harnessing the Power of Customer Testimonials in Marketing",
     des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mi pharetra mauris nulla purus facilisis cras",
     date: "July 27, 2024",
+  },
+];
+
+export const footerLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Portfolio",
+    href: "/work",
+  },
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+  {
+    name: "Services",
+    href: "/service",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
+
+export const socialLinks = [
+  {
+    name: "Facebook",
+    href: "/",
+  },
+  {
+    name: "X",
+    href: "/",
+  },
+  {
+    name: "Linkedin",
+    href: "/",
+  },
+];
+
+
+export const services = [
+  {
+    name: "Web Development",
+    href: "/",
+  },
+  {
+    name: "Web Design",
+    href: "/",
+  },
+  {
+    name: "SEO",
+    href: "/",
+  },
+  {
+    name: "Paid Advertising",
+    href: "/",
+  },
+  {
+    name: "Website Management",
+    href: "/",
+  },
+  {
+    name: "Website Template Dev.",
+    href: "/",
   },
 ];

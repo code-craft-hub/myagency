@@ -32,7 +32,7 @@ const page = () => {
               className="flex flex-col border-[1px] rounded-xl p-4 sm:p-8"
             >
               <div className="flex-1 mb-4">
-                <div className="flex-1 relative h-52 overflow-hidden flex items-center justify-center rounded-xl">
+                <div className="flex-1 relative h-96 overflow-hidden flex items-center justify-center rounded-xl">
                   <Image
                     src={img}
                     fill={true}

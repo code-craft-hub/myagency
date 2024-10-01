@@ -17,7 +17,7 @@ const BlogChildren = ({ params: { work } }: { params: { work: number } }) => {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
+              <BreadcrumbLink href="/work">Work</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -122,22 +122,7 @@ const BlogChildren = ({ params: { work } }: { params: { work: number } }) => {
                     className="rounded-3xl"
                   />
                 </div>
-                {/* <div className="flex py-8 justify-between items-center">
-                    <div className="flex items-center gap-4 ">
-                      <div className="rounded-full overflow-hidden">
-                        <Image
-                          src={authorImg}
-                          height={35}
-                          width={35}
-                          alt="author"
-                        />
-                      </div>
-                      <span className="font-bold">{authorName}</span>
-                    </div>
-                    <div className="">
-                      <span className="text-gray-200">{date}</span>
-                    </div>
-                  </div> */}
+               
                 <div className="space-y-2 mt-8">
                   <h1 className="font-bold text-3xl">{title}</h1>
                   <p className="text-gray-300">{subtitle}</p>
